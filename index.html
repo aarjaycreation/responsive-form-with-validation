@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task 5.3.2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"/>
+    <link rel="stylesheet" href="assets/css/style2.css" />
+  </head>
+  <body>
+    <section class="card">
+      <img src="assets/img/illustration-box-desktop.svg" alt="card box" class="card__box"/>
+      <div class="card__image">
+        <img src="assets/img/illustration-woman-online-desktop.svg" alt="online desktop" />
+      </div>
+      <div class="card__text">
+        <h1>Form</h1>
+        <form id="taskForm">
+          <!-- first row  -->
+          <div class="form__row">
+            <!-- frist name  -->
+            <div class="form__div">
+              <div class="form__div-input">
+                <label class="form__label" id="firstNameCall">First Name<span class="form__dot">*</span></label>
+                <input class="form__input" id="FirstName" type="text" placeholder="Enter your Frist Name"/>
+              </div>
+              <div id="FirstNameError" class="Error"></div>
+            </div>
+            <!-- last name  -->
+            <div class="form__div">
+              <div class="form__div-input">
+                <label class="form__label" id="lastNameCall">Last Name<span class="form__dot">*</span></label>
+                <input class="form__input" id="LastName" type="text" placeholder="Enter your Last Name"/>
+              </div>
+              <div id="LastNameError" class="Error"></div>
+            </div>
+          </div>
+          <!-- second row  -->
+          <div class="form__row">
+            <!-- Email  -->
+            <div class="form__div">
+              <div class="form__div-input">
+                <label class="form__label" id="mailCall">Email<span class="form__dot">*</span></label>
+                <input class="form__input" id="Email" type="email" placeholder="Enter your Email"/>
+              </div>
+              <div id="EmailError" class="Error"></div>
+            </div>
+            <!-- phone number   -->
+            <div class="form__div">
+              <div class="form__div-input">
+                <label class="form__label" id="phoneCall">Phone<span class="form__dot">*</span></label>
+                <input class="form__input" id="PhoneNumber" type="tel" placeholder="Enter your phone Number" />
+              </div>
+              <div id="PhoneNumberError" class="Error"></div>
+            </div>
+          </div>
+          <div class="form__row">
+            <!-- qualification  -->
+            <div class="form__div">
+              <div class="form__div-input">
+                <label class="form__label" id="quailificationCall">Qualification<span class="form__dot">*</span></label>
+                <select id="Qualification" class="form__select">
+                  <option selected disabled>Qualification</option>
+                  <option value="BCA">BCA</option>
+                  <option value="MCA">MCA</option>
+                  <option value="B.tech">B.tech</option>
+                </select>
+              </div>
+              <div id="QualificationError" class="Error"></div>
+            </div>
+
+            <!-- hobbies -->
+            <div class="form__div">
+              <div class="form__div-input">
+              <label class="form__label" id="hobbiesCall">Hobbies<span class="form__dot">*</span></label>
+                <div class="form__input form__input_hobby">
+                  <div class="form__input_hobby-flex">
+                    <input type="checkbox" value="Reading" name="hobbies" id="hobbies" />
+                    <div>Reading</div>
+                  </div>
+                  <div class="form__input_hobby-flex">
+                    <input type="checkbox" value="Games" name="hobbies" />
+                    <div>Games</div>
+                  </div>
+                  <div class="form__input_hobby-flex">
+                    <input type="checkbox" value="Music" name="hobbies" />
+                    <div>Music</div>
+                  </div>
+                </div>
+                <div id="HobbyError" class="Error"></div>
+              </div>
+            </div>
+          </div>
+          <!-- gander  -->
+          <div class="form__div">
+            <div class="demo__gender">
+              <div class="gan__input-box">
+                <input class="form-check-input" type="radio" name="gender" value="Male" checked/>
+                <label class="gan__lable">Male</label>
+              </div>
+              <div class="gan__input-box">
+                <input class="form-check-input" type="radio" name="gender" value="Female"/>
+                <label class="gan__lable">Female</label>
+              </div>
+              <div class="gan__input-box">
+                <input class="form-check-input" type="radio" name="gender" value="Others"/>
+                <label class="gan__lable">Other</label>
+              </div>
+            </div>
+          </div>
+          <!-- commant box  -->
+          <div class="form__div">
+            <div class="form__div-input">
+              <label class="form__label" id="commentCall">Comment<span class="form__dot">*</span></label>
+              <textarea class="form__input massage__box" id="Comment" placeholder="Please Write Your Massage Here..."></textarea>
+            </div>
+            <div id="CommentError" class="Error"></div>
+          </div>
+          <!-- submit button  -->
+          <button type="submit" class="form__button">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!--show result  -->
+    <section class="Result__card">
+      <div id="showData"></div>
+    </section>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,262 @@
+:root {
+  --text-blue: hsl(238, 29%, 16%);
+  --text-dkblue: hsl(240, 6%, 50%);
+  --text-xdkblue: hsl(237, 12%, 33%);
+  --text-red: hsl(14, 88%, 65%);
+  --gradient-violet: hsl(273, 75%, 66%);
+  --gradient-blue: hsl(240, 73%, 65%);
+  --divider-blue: hsl(240, 5%, 91%);
+}
+
+html {
+  box-sizing: initial;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 10rem 1rem;
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: linear-gradient(
+    var(--gradient-violet),
+    var(--gradient-blue)
+  );
+  color: var(--text-blue);
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+.form__dot {
+  color: #ff0000;
+  font-weight: 800;
+}
+.card {
+  background: #ffffff;
+  border-radius: 2rem;
+  max-width: 56rem;
+  padding: 2.875rem 1.5rem;
+  background-image: url("../img/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 15rem;
+}
+
+.card__box {
+  display: none;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image img {
+  position: absolute;
+  top: -6.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 100%;
+  max-width: 15rem;
+  height: auto;
+}
+
+.card__text {
+  padding-top: 7rem;
+}
+.form__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.form__div-input {
+  display: flex;
+  flex-direction: column;
+}
+.Error {
+  font-size: 0.9rem;
+  color: #ff0000;
+}
+
+.form__label {
+  color: var(--gradient-violet);
+  font-size: 1.2rem;
+}
+/* form input  */
+.form__input {
+  outline: none;
+  background: none;
+  border: 2px solid var(--gradient-violet);
+  border-radius: 0.2rem;
+  height: 2rem;
+  font-size: 0.9rem;
+  color: gray;
+}
+.form__input::placeholder {
+  font-size: 0.9rem;
+  color: darkgray;
+}
+/* other  */
+.form__select {
+  height: 2rem;
+  border: 2px solid var(--gradient-violet);
+  border-radius: 0.2rem;
+  color: darkgray;
+  font-size: 0.9rem !important;
+  outline: none;
+}
+
+input[name="gender"] {
+  accent-color: var(--gradient-blue);
+}
+
+.multiselect-wrapper .multiselect-input {
+  width: 100%;
+  padding-right: 17px;
+}
+.massage__box {
+  height: 4rem;
+  word-spacing: 0%;
+  font-size: 0.9rem;
+}
+.form__button {
+  margin-top: 2rem;
+  width: 5rem;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  margin-bottom: 3rem;
+  background-color: var(--gradient-blue);
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form__button:hover {
+  box-shadow: 0px 15px 36px rgba(0, 0, 0, 0.15);
+}
+
+.form__input_hobby-flex {
+  padding-top: 0.4rem;
+  display: inline-flex;
+}
+/* example of setting the width for multiselect */
+#testSelect1_multiSelect {
+  width: 90%;
+}
+.demo__gender {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+.gan__input-box {
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  background-color: var(--gradient-violet);
+  border-radius: 0.4rem;
+}
+.gan__lable {
+  color: #ffffff;
+}
+.form-check-input {
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* from__result */
+.from__result {
+  margin: 3rem auto 3rem auto;
+  background: #ffffff;
+  border-radius: 2rem;
+  max-width: 56rem;
+}
+.from__result-inside {
+  padding: 10%;
+}
+.form__result-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+/* mobile style  */
+@media (max-width: 56em) {
+  .form__row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .multiselect-wrapper .multiselect-input {
+    width: 100%;
+    padding-right: 25px;
+  }
+  .gan__input-box {
+    width: 5.91rem;
+  }
+}
+
+/* desktop  */
+
+@media (min-width: 56em) {
+  body {
+    padding: 5rem;
+  }
+
+  .card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 0 auto;
+    padding: 2.375rem 2.25rem 2.375rem 0;
+    background-image: url("../img/bg-pattern-desktop.svg");
+    background-size: 45%;
+    background-position: -13% center;
+  }
+
+  .card__box {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 57%;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .card__image,
+  .card__text {
+    flex: 1;
+  }
+
+  .card__image {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card__image img {
+    position: relative;
+    top: auto;
+    left: auto;
+    max-width: 25rem;
+    transform: translateX(-4rem);
+  }
+
+  .card__text {
+    padding-top: 0;
+  }
+}

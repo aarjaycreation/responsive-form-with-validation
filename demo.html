@@ -1,0 +1,140 @@
+<link rel="stylesheet" href="assets/css/style2.css">
+<!-- hobbies  -->
+<div class="form__div">
+  <div class="form__div-input">
+    <label class="form__label">Hobbies</label>
+    <select id="testSelect1" multiple>
+      <option value="Reading" name="hobbies" id="hobbies">Reading</option>
+      <option value="Games" name="hobbies">Games</option>
+      <option value="Music" name="hobbies">Music</option>
+      <option value="4" selected>Item 4</option>
+    </select>
+  </div>
+  <div id="HobbyError" class="Error"></div>
+</div>
+<!-- second  -->
+<fieldset>
+  <legend>What is Your Hobbies?</legend>
+  <input type="checkbox" value="Reading" name="hobbies" id="hobbies" />
+  <div>Reading</div>
+
+  <input type="checkbox" value="Games" name="hobbies" />
+  <div>Games</div>
+
+  <input type="checkbox" value="Music" name="hobbies" />
+  <div>Music</div>
+</fieldset>
+<!-- three  -->
+<div class="form__div">
+  <div class="form__div-input">
+    <label class="form__label">Hobbies</label>
+    <div>
+      <input type="checkbox" value="Reading" name="hobbies" id="hobbies" />
+      <div>Reading</div>
+
+      <input type="checkbox" value="Games" name="hobbies" />
+      <div>Games</div>
+
+      <input type="checkbox" value="Music" name="hobbies" />
+      <div>Music</div>
+    </div>
+
+    <div id="HobbyError" class="Error"></div>
+  </div>
+</div>
+
+<form id="taskForm">
+  <!-- frist name  -->
+
+  <input
+    class="form-control"
+    id="FirstName"
+    type="text"
+    placeholder="Enter your Frist Name"
+  />
+  <div id="FirstNameError" class="Error"></div>
+
+  <!-- last name  -->
+
+  <input
+    class="form-control"
+    id="LastName"
+    type="text"
+    placeholder="Enter your Last Name"
+  />
+  <div id="LastNameError" class="Error"></div>
+
+  <!-- Email  -->
+
+  <input
+    class="form-control"
+    id="Email"
+    type="email"
+    placeholder="Enter your Email"
+  />
+  <div id="EmailError" class="Error"></div>
+
+  <!-- hobbies  -->
+
+  <input
+    class="form-control"
+    id="PhoneNumber"
+    type="tel"
+    placeholder="Enter your phone Number"
+  />
+  <div id="PhoneNumberError" class="Error"></div>
+
+  <!-- qualification  -->
+
+  <select
+    id="Qualification"
+    class="form-select select-form"
+    aria-label="Default select example"
+  >
+    <option selected disabled>Qualification</option>
+    <option value="BCA">BCA</option>
+    <option value="MCA">MCA</option>
+    <option value="B.tech">B.tech</option>
+  </select>
+  <div id="QualificationError" class="Error"></div>
+
+  <input type="checkbox" value="Reading" name="hobbies" id="hobbies" />
+  <div>Reading</div>
+
+  <input type="checkbox" value="Games" name="hobbies" />
+  <div>Games</div>
+
+  <input type="checkbox" value="Music" name="hobbies" />
+  <div>Music</div>
+
+  <div id="HobbyError" class="Error"></div>
+  <!-- gander  -->
+
+  <input
+    class="form-check-input"
+    type="radio"
+    name="gender"
+    value="Male"
+    checked
+  />
+  <div>male</div>
+
+  <input class="form-check-input" type="radio" name="gender" value="Female" />
+  <div>female</div>
+
+  <input class="form-check-input" type="radio" name="gender" value="Others" />
+  <div>Others</div>
+
+  <!-- commant box  -->
+  <div>
+    <label>comment<sup>*</sup></label>
+    <textarea
+      class="form-control massage__box"
+      id="Comment"
+      rows="3"
+    ></textarea>
+    <div id="CommentError" class="Error"></div>
+  </div>
+
+  <button type="submit" class="submitbutton">Submit</button>
+</form>
